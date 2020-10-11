@@ -11,7 +11,7 @@ window.onload = function() {
     turningRight = false,
     thrusting = false;
 
-    ship.friction = 0.99;
+    ship.friction = 0.;
   
     update();
 
@@ -49,6 +49,7 @@ window.onload = function() {
        
         }
     });
+
 
     function update() {
         context.clearRect(0,0, width, height);
